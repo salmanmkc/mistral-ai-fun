@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mistral AI Showcase App
+
+A comprehensive Next.js application showcasing various Mistral AI capabilities including chat, code generation, embeddings, and function calling.
+
+## Features
+
+- 🤖 **Interactive Chat** - Real-time streaming chat with multiple Mistral AI models
+- 💻 **Code Generation** - Generate code in multiple programming languages using Codestral
+- 🔢 **Embeddings** - Convert text into vector embeddings for semantic search
+- 🔧 **Function Calling** - Demonstrate AI-powered function calling with tools
+- 🎨 **Modern UI** - Beautiful, responsive interface with dark mode support
+- ⚡ **Fast & Efficient** - Built with Next.js 16 and React 19
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- A Mistral AI API key ([Get one here](https://console.mistral.ai/))
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/salmanmkc/mistral-ai-fun.git
+cd mistral-ai-fun/mistral-chat-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Create a `.env.local` file:
+```bash
+MISTRAL_API_KEY=your_mistral_api_key_here
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Run the development server:
+```bash
+npm run dev
+```
 
-## Learn More
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-To learn more about Next.js, take a look at the following resources:
+## Available Models
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Mistral Tiny** - Fast and efficient for simple tasks
+- **Mistral Small** - Balanced performance
+- **Mistral Medium** - More capable for complex tasks
+- **Mistral Large** - Most powerful model
+- **Codestral** - Specialized for code generation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Features Overview
 
-## Deploy on Vercel
+### Chat Interface
+Real-time streaming responses with model selection and conversation history.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Code Generation
+Support for Python, JavaScript, TypeScript, Java, C++, Rust, and Go.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Embeddings
+Generate vector embeddings from text for semantic search applications.
+
+### Function Calling
+Demonstrate AI tool usage with weather lookup and calculator functions.
+
+## Tech Stack
+
+- **Framework**: Next.js 16 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **AI SDK**: Mistral AI Official SDK
+- **Icons**: Lucide React
+
+## Deployment
+
+Deploy to Vercel, Netlify, or any platform supporting Next.js with API routes.
+
+Add your `MISTRAL_API_KEY` environment variable in your deployment platform.
+
+## License
+
+MIT
+
