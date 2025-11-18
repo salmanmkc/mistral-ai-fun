@@ -45,11 +45,11 @@ export async function POST(req: NextRequest) {
               console.log(`Image data length: ${file.content?.length}`);
               console.log(`Image data prefix: ${file.content?.substring(0, 50)}`);
 
-              // Mistral docs show: image_url should be the data URI string directly
+              // Mistral TypeScript SDK uses camelCase: imageUrl (not image_url!)
               // Format: "data:image/jpeg;base64,{base64_string}"
               content.push({
                 type: "image_url",
-                image_url: file.content
+                imageUrl: file.content  // camelCase!
               });
             } else {
               // For text files, add as text content
